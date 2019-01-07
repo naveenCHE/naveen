@@ -1,0 +1,13 @@
+header, footer {
+    width: 100%;
+    padding: 10px 0;    
+    background-color: #787878;
+}
+h1,h4 {
+    color: #fff;
+    font-family: Arial;
+    padding-left: 40px;
+}
+h4 {
+   text-align: center; 
+}

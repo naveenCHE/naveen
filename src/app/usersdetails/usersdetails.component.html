@@ -1,0 +1,70 @@
+<div class="single-user-block">
+    <div class="single-user">
+        <span>
+            {{singleuser.login}}
+        </span>
+        <span class="user-admin">
+            Site Admin
+        </span>
+    </div>
+    <button class="back-button" (click)="backbutton()"> &lt; Back</button>
+</div>
+<div class="single-user-details">
+    <table class="single-user-table">
+        <tr>
+            <td>"Login"</td> <td>{{singleuser.login}}</td>
+        </tr>
+        <tr>
+             <td>"ID":</td>
+             <td>{{singleuser.id}}</td>
+        </tr>
+        <tr>
+           <td>"node_id"</td> 
+           <td>{{singleuser.node_id}}</td>
+        </tr>
+        <tr>
+            <td>"Avatar_url"</td>
+            <td>{{singleuser.avatar_url}}</td>
+        </tr>  
+        <tr>
+            <td>"url"</td>
+            <td>{{singleuser.url}}</td>
+        </tr>
+        <tr>
+            <td>"html_url"</td>
+            <td>{{singleuser.html_url}}</td>
+        </tr>    
+        <tr>
+            <td>"subscriptions_url"</td>
+            <td>{{singleuser.subscriptions_url}}</td>
+        </tr>  
+        <tr>
+            <td>"organizations_url"</td>
+            <td>{{singleuser.organizations_url}}</td>
+        </tr>
+        <tr>
+            <td>"respos_url"</td>
+            <td>{{singleuser.respos_url}}</td>
+        </tr>
+        <tr>
+            <td>"site_admin"</td>
+            <td>{{singleuser.site_admin}}</td>
+        </tr>
+        <tr>
+           <td>"name"</td>
+           <td>{{singleuser.name}}</td>
+        </tr>
+        <tr>
+           <td>"compnay"</td> 
+           <td>{{singleuser.compnay}}</td>
+        </tr>
+        <tr>
+          <td>"blog"</td>
+          <td>{{singleuser.blog}}</td>
+        </tr>  
+        <tr>
+             <td>"location":</td>
+             <td>{{singleuser.location}}</td>
+        </tr>      
+    </table>
+</div>

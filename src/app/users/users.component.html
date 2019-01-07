@@ -1,0 +1,35 @@
+<div class="user-search-block" *ngIf="!hideDetails">
+  <input type="text" placeholder="Search Here..." class="search-box" [(ngModel)] = "searchTerm" >
+  <div class="search-icon"></div>
+</div>
+<div *ngIf="!hideDetails">
+  <ng-container *ngFor="let users of userdata | searchUsers:searchTerm ; let i=index">
+    <div class="user-parent" *ngIf="i < 8">
+      <div class="users-main-block" (click)="userdetails(users)">
+        <div class="user-img"></div>
+        <div class="user-name">
+          {{users.login}}
+        </div>
+        <div class="site-Admin">
+          {{siteAdmin}}
+        </div>
+      </div>
+      <div class="user-buttons">
+        <button type="button" class="user-button add-button" [disabled] = 'users.cursor'  (click)="addUser(users ,i)">Add</button>
+        <button type="button" class="user-button" (click)="cancelUser(users)">Cancel</button>
+      </div>
+    </div>
+  </ng-container>
+</div>
+<div *ngIf="!hideDetails">
+    <div class="user-shortlisted-block">
+        <h2>Shortlisted</h2>
+        <div class="user-shortlist">
+            <short-list [shortlistedData] = 'selectedData'></short-list>
+        </div>
+    </div>
+</div>
+<div *ngIf="hideDetails">
+    <users-details [singleuser] = "user" (userhidedetails) = "hideUserDetails($event)">        
+    </users-details>
+</div>

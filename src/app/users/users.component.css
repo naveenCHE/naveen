@@ -1,0 +1,92 @@
+.user-parent {
+  width: 252px;
+  height: 370px;
+  border: solid 1px #ccc;
+  display: inline-block;
+  margin: 7px;
+  cursor: pointer;
+}
+.users-main-block {
+  width: 252px;
+}
+.user-img {
+    width: 113px;
+    height: 130px;
+    background-image: url("../img/userIcon.png");
+    background-repeat: no-repeat;
+    margin: 40px auto 20px auto;
+}
+.user-name {
+    color: #4e4e4e;
+    font-size: 18px;
+    font-family: arial;
+}
+.site-Admin {
+    font-size: 17px;
+    color: #afafaf;
+    font-family: arial;
+    margin-top: 15px !important;
+    margin-bottom: 20px !important;
+}
+.user-name, .site-Admin {
+    width: 113px;
+    margin: auto;
+}
+.user-buttons {
+    text-align: center;
+}
+.add-button {
+  background-color: #787878 !important;
+}
+.user-button {
+    border: solid 1px #ccc;
+    width: 80px;
+    padding: 7px;
+    border-radius: 20px;
+    color: #e0e0e0;
+    background-color: #fff;
+    margin-right: 12px;
+  outline: none;
+    cursor: pointer;
+}
+.user-shortlisted-block {
+    height: auto;
+    min-height: 100px;
+    margin: auto;
+    border: solid 1px #ccc;
+    margin: 50px 0;
+  display: grid;
+}
+h2 {
+    width: 100%;
+    padding: 10px 0;    
+    background-color: #787878;
+    color: #fff;
+    font-family: Arial;
+  margin-top: 0;
+}
+
+/**********search box *******/
+.user-search-block {
+  width: 100%;
+  height: 40px;
+  margin: 40px auto;
+  border: solid 1px #ccc;
+}
+.search-box {
+  width: 97.5%;
+  height: 34px;
+  background-image: url("../img/search-icon.png");
+  background-repeat: no-repeat;
+  border: solid 1px #fff;
+  background-position: right;
+  background-position: right;
+  outline: none;
+  padding-left: 6px;
+}
+input::placeholder {
+  color: #4e4e4e;
+  font-style: italic;
+  font-size: 14px;
+
+}

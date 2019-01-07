@@ -1,0 +1,18 @@
+<ng-container *ngFor="let shortlist of shortlistedData; let s = index">
+  <div class="user-parent" *ngIf="s < maxshortlist">
+    <div class="users-main-block">
+      <div class="user-img"></div>
+      <div class="user-name">
+        {{shortlist.login}}
+      </div>
+      <div class="site-Admin">{{siteAdmin}}</div>
+    </div>
+    <div class="user-buttons">
+      <button type="button" class="user-button remove-button" (click)="removeUser(shortlist)">Remove</button>
+    </div>
+  </div>
+</ng-container>
+
+<div class="more-users" (click) = "morelist()" *ngIf="shortlistedData.length > 3">
+       MORE +
+</div>

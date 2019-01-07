@@ -1,0 +1,51 @@
+.single-user {
+    width: 198px;
+    text-align: right;
+    padding: 55px 0;
+    background-image: url("../img/userIcon.png");
+    background-repeat: no-repeat;
+    color: #484848;
+    font-family: Arial;
+    float: left;
+}
+span {
+    display: inherit;
+    margin-bottom: 5px;
+}
+.user-admin {
+    font-size: 12px;
+    color: #afafaf;
+}
+.back-button {
+    padding: 5px;
+    margin-top: 50px;
+    background-color: #787878;
+    color: #fcfcfc;
+    border-radius: 5px;
+    border: solid 1px #9c9c9c;
+    float: right;
+    outline: none;
+    cursor: pointer;
+}
+.single-user-details {
+    width: 100%;
+    display: inline-block;
+    border-top: solid 1px #e0e0e0;
+    
+}
+
+
+.single-user-table {
+    width: 100%;
+    border:solid 1px #c1c1c1;
+    border-collapse: collapse;
+    background-color: #efefef;
+    font-family: Arial;
+    color: #484848;
+    margin-top: 20px;
+}
+.single-user-table td {
+    border:solid 1px #c1c1c1;
+    padding: 10px;
+    text-align: left;
+}
